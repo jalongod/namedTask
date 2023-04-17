@@ -30,7 +30,7 @@ export default async function namedTask<Input, Output>(
   const eventName = getEventName(name);
   if (taskCache[name]) {
     const ret = await new Promise<Output>((resolve) => {
-      eventBus.on(eventName, (result) => {
+      eventBus.on(eventName, (result: any) => {
         resolve(result);
       });
     });
