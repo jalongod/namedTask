@@ -1,3 +1,11 @@
 {
-    "include": ["./src/**/*.ts","./test/**/*.ts"]
+    "compilerOptions": {
+        "lib": ["ES2015"],
+        "module": "ES2015",
+        "sourceMap": true,
+        "strict": true,
+        "target": "es2015",
+        "esModuleInterop": true,
+    },
+    "include": ["./src/**/*.ts"]
 }
